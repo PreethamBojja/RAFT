@@ -1,0 +1,13 @@
+{application,rabia,
+             [{optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,emulation,statistics,
+                             prioqueue]},
+              {description,"rabia"},
+              {modules,['Elixir.Rabia','Elixir.Rabia.Command',
+                        'Elixir.Rabia.CommandResponse',
+                        'Elixir.Rabia.ProtocolMessage',
+                        'Elixir.Rabia.StateMessage','Elixir.Rabia.Timestamp',
+                        'Elixir.Rabia.TimestampedCommand',
+                        'Elixir.Rabia.VoteMessage']},
+              {registered,[]},
+              {vsn,"0.1.0"}]}.

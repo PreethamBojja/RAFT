@@ -1,0 +1,12 @@
+{application,extractable,
+             [{optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"A lightweight reusable Extractable protocol, allowing extracting elements one-at-a-time from a collection.\n"},
+              {modules,['Elixir.Extractable','Elixir.Extractable.List',
+                        'Elixir.Extractable.Map','Elixir.Extractable.MapSet',
+                        'Elixir.MapIterator','Elixir.MapKeys',
+                        'Elixir.MapKeysInverted','Elixir.MapKeysSize',
+                        'Elixir.MapKeysSizeInverted',
+                        'Elixir.MapKeysSizeInverted2','Elixir.MapList']},
+              {registered,[]},
+              {vsn,"0.2.1"}]}.

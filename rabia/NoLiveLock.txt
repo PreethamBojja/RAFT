@@ -1,0 +1,263 @@
+23:31:57.978 [warning] a proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 1
+
+23:31:57.978 [warning] b proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 1
+
+23:31:57.978 [warning] c proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 1
+
+23:31:57.981 [warning] b proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 2
+
+23:31:57.981 [notice] b,1 going to Ben-Or with state bot
+
+23:31:57.981 [warning] c proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 2
+
+23:31:57.981 [warning] a proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 2
+
+23:31:57.981 [notice] c,1 going to Ben-Or with state bot
+
+23:31:57.981 [notice] a,1 going to Ben-Or with state bot
+
+23:31:57.981 [warning] b Received proposal from :c for 1, but have already transitioned to Ben-Or
+
+23:31:57.981 [notice] b,1 update state command :bot (:bot)
+
+23:31:57.981 [notice] b,2 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.981 [warning] a Received proposal from :c for 1, but have already transitioned to Ben-Or
+
+23:31:57.981 [warning] c Received proposal from :b for 1, but have already transitioned to Ben-Or
+
+23:31:57.982 [notice] a,1 update state command :bot (:bot)
+
+23:31:57.982 [notice] c,2 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.982 [notice] a,2 going to Ben-Or with state bot
+
+23:31:57.982 [warning] b Received proposal from :a for 2, but have already transitioned to Ben-Or
+
+23:31:57.982 [notice] b,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.982 [warning] c Received proposal from :a for 2, but have already transitioned to Ben-Or
+
+23:31:57.982 [warning] a Received proposal from :b for 2, but have already transitioned to Ben-Or
+
+23:31:57.982 [notice] c,1 update state command :bot (:bot)
+
+23:31:57.982 [notice] a,2 update state command :bot (:bot)
+
+23:31:57.982 [notice] c,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.982 [notice] b,1 update state command :bot (:bot)
+
+23:31:57.982 [notice] a,1 update state command :bot (:bot)
+
+23:31:57.982 [notice] c,1 update state command :bot (:bot)
+
+23:31:57.982 [notice] a,1 Round 1 vote for command :bot
+
+23:31:57.982 [notice] b,1 Round 1 vote for command :bot
+
+23:31:57.982 [notice] c,1 Round 1 vote for command :bot
+
+23:31:57.983 [notice] b,2 update state command :bot (:bot)
+
+23:31:57.983 [notice] a,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.983 [notice] c,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.983 [notice] b,2 Round 1 vote for ?
+
+23:31:57.983 [notice] a,2 Round 1 vote for ?
+
+23:31:57.983 [notice] c,2 Round 1 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.984 [notice] a,1 decided for  :bot
+
+23:31:57.984 [notice] c,1 decided for  :bot
+
+23:31:57.984 [notice] b,1 decided for  :bot
+
+23:31:57.984 [warning] b proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 3
+
+23:31:57.985 [warning] b received vote from :c about decided index 1
+
+23:31:57.985 [warning] a proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 3
+
+23:31:57.985 [warning] c proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 3
+
+23:31:57.985 [warning] a received vote from :c about decided index 1
+
+23:31:57.985 [warning] c received vote from :b about decided index 1
+
+23:31:57.985 [notice] c, 2 Need to go back to p2s with command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.985 [notice] a, 2 Need to go back to p2s with command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.986 [notice] b, 2 Need to go back to p2s with command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.986 [warning] c,2 droping vote message from old round (1, 2)
+
+23:31:57.986 [notice] c,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.986 [warning] a,2 droping vote message from old round (1, 2)
+
+23:31:57.986 [notice] a,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.986 [warning] c droping state message from old round (1, 2)
+
+23:31:57.986 [warning] a droping state message from old round (1, 2)
+
+23:31:57.986 [notice] b,2 update state command :bot (:bot)
+
+23:31:57.986 [warning] b droping state message from old round (1, 2)
+
+23:31:57.986 [notice] b,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.986 [notice] b,2 Round 2 vote for ?
+
+23:31:57.986 [notice] c,3 going to Ben-Or with state bot
+
+23:31:57.986 [warning] b droping state message from old round (1, 2)
+
+23:31:57.986 [notice] a,3 going to Ben-Or with state bot
+
+23:31:57.986 [notice] b, 2 Need to go back to p2s with command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.987 [warning] c Received proposal from :b for 3, but have already transitioned to Ben-Or
+
+23:31:57.987 [warning] a Received proposal from :c for 3, but have already transitioned to Ben-Or
+
+23:31:57.987 [notice] c,3 update state command :bot (:bot)
+
+23:31:57.987 [notice] a,3 update state command :bot (:bot)
+
+23:31:57.987 [notice] b,3 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.987 [warning] b Received proposal from :a for 3, but have already transitioned to Ben-Or
+
+23:31:57.987 [notice] b,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.987 [notice] b,3 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.987 [warning] b droping state message from old round (2, 3)
+
+23:31:57.987 [notice] a,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.987 [notice] a,2 Round 2 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.988 [notice] a,2 decided for  %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.988 [warning] a proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 4
+
+23:31:57.988 [notice] a,3 update state command :bot (:bot)
+
+23:31:57.988 [warning] b droping state message from old round (2, 3)
+
+23:31:57.988 [notice] c,2 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.988 [notice] b,3 update state command :bot (:bot)
+
+23:31:57.988 [notice] a,3 Round 1 vote for command :bot
+
+23:31:57.988 [notice] c,2 Round 2 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.988 [notice] b,3 Round 1 vote for ?
+
+23:31:57.989 [notice] c,2 decided for  %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.989 [warning] a received state message from :b about decided index 2
+
+23:31:57.989 [warning] a received vote from :b about decided index 2
+
+23:31:57.989 [warning] c received state message from :b about decided index 2
+
+23:31:57.989 [warning] b,2 droping vote message from old round (2, 3)
+
+23:31:57.989 [notice] c,3 update state command :bot (:bot)
+
+23:31:57.989 [warning] a received vote from :c about decided index 2
+
+23:31:57.989 [notice] c,3 Round 1 vote for command :bot
+
+23:31:57.990 [warning] a received state message from :b about decided index 2
+
+23:31:57.990 [warning] c received vote from :a about decided index 2
+
+23:31:57.990 [warning] b,2 droping vote message from old round (2, 3)
+
+23:31:57.990 [warning] c received vote from :b about decided index 2
+
+23:31:57.990 [notice] a,3 decided for  :bot
+
+23:31:57.991 [warning] a proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :a}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 5
+
+23:31:57.991 [warning] a received state message from :b about decided index 3
+
+23:31:57.991 [warning] c received state message from :b about decided index 2
+
+23:31:57.991 [notice] b, 3 Need to go back to p2s with command :bot
+
+23:31:57.992 [notice] b,3 update state command :bot (:bot)
+
+23:31:57.992 [warning] b droping state message from old round (1, 2)
+
+23:31:57.992 [warning] b,3 droping vote message from old round (1, 2)
+
+23:31:57.992 [warning] a received vote from :b about decided index 3
+
+23:31:57.992 [notice] c,3 decided for  :bot
+
+23:31:57.993 [warning] c proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 4
+
+23:31:57.993 [warning] c received state message from :b about decided index 3
+
+23:31:57.993 [notice] c,4 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.993 [notice] c,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.993 [warning] c received vote from :b about decided index 3
+
+23:31:57.993 [notice] a,4 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.993 [warning] a received state message from :b about decided index 3
+
+23:31:57.993 [notice] a,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.994 [warning] c received state message from :b about decided index 3
+
+23:31:57.994 [notice] a,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.994 [notice] a,4 Round 1 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.995 [notice] b,4 going to Ben-Or with state %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.995 [notice] c,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.995 [notice] c,4 Round 1 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.996 [notice] b,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.996 [notice] c,4 decided for  %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.996 [notice] a,4 decided for  %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.996 [warning] c received state message from :b about decided index 4
+
+23:31:57.996 [warning] b proposing %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} for 4
+
+23:31:57.996 [warning] b Received proposal from :b for 4, but have already transitioned to Ben-Or
+
+23:31:57.997 [warning] a received proposal from :b about decided index 4
+
+23:31:57.997 [warning] c received proposal from :b about decided index 4
+
+23:31:57.997 [notice] b,4 update state command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}} (:cmd)
+
+23:31:57.997 [notice] b,4 Round 1 vote for command %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:57.998 [warning] c received vote from :b about decided index 4
+
+23:31:57.998 [warning] a received vote from :b about decided index 4
+
+23:31:58.000 [notice] b,4 decided for  %Rabia.TimestampedCommand{timestamp: %Rabia.Timestamp{idx: 1, node_id: :b}, command: %Rabia.Command{client_seq: 1, operation: :nop, args: nil}}
+
+23:31:58.001 [warning] b received vote from :a about decided index 4
